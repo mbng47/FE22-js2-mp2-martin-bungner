@@ -1,0 +1,86 @@
+/* *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    } */
+
+:root {
+    --pink: hsl(350, 100%, 92%, 0.8);
+    --whiteIsh: hsl(0, 0%, 100%, 0.7);
+    --green: hsl(100, 80%, 85%, 0.8);
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    background-color: var(--pink);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    margin-top: 2em;
+    border-radius: 5px;
+    width: 90vw;
+    height: 85vh;
+    overflow: scroll;
+    background-color: var(--whiteIsh);
+}
+
+#form-section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+
+#logo {
+    font-family: nosifer;
+    font-size: 2em;
+    flex-basis: 100%;
+    text-align: center;
+}
+
+
+#display-section {
+    padding: 2em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+
+.card {
+    padding: 1em;
+    width: 15em;
+    height: 15em;
+    border-radius: 50%;
+    background-color: var(--pink);
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card > h1, h3{
+    text-align: center;
+    flex-basis: 100%;
+}
+
+.card > button{
+    margin: 0.5em;
+}
+
+.turtle {
+    background-color: var(--green);
+}
